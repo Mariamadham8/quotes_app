@@ -6,7 +6,7 @@ class QuoteModel extends Quotes {
 
   factory QuoteModel.fromJson(Map<String, dynamic> json) {
     return QuoteModel(
-      id: json['slip']['id'] ?? '',
+      id: json['slip']['id'] ?? [],
       quote: json['slip']['advice'],
     );
   }

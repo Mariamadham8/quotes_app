@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:quotes_app/features/fav_quotes/presentation/cubit/add_quote_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../features/random_quotes/data/data_sources/random_quote_local_datasource.dart';
@@ -38,4 +39,6 @@ Future<void> init() async {
 
   // Cubit
   sl.registerFactory(() => RandomQuoteCubit(sl()));
+
+  sl.registerLazySingleton(() => AddQuoteCubit());
 }
