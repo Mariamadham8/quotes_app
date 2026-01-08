@@ -25,8 +25,8 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
 
         switch (i) {
           case 0:
-            context.push(AppRouter.home);
             print("Refresh tapped");
+            context.push(AppRouter.home);
             break;
           case 1:
             context.push(AppRouter.favQuotes);

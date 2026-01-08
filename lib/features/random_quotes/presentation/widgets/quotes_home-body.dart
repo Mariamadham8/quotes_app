@@ -28,6 +28,7 @@ class _QuotesHomeBodyState extends State<QuotesHomeBody> {
             child: Center(
               child: Stack(
                 children: [
+                  Image.asset('assets/AppBackground.jpg'),
                   Container(
                     height: 180,
                     decoration: BoxDecoration(
